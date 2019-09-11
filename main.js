@@ -23,5 +23,12 @@ class Media {
     toggleCheckOutStatus() {
         this.isCheckedOut = !this.isCheckedOut;
     }
+    // this method returns the average value of the 'ratings' array
+    getAverageRating() {
+        let sumOfRatings = this.ratings.reduce((currentSum, rating) => currentSum + rating);
+        const lengthOfArray = this.ratings.length;
+        let average = sumOfRatings / lengthOfArray;
+        return average;
+    }
 
 }
