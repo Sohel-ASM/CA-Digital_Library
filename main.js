@@ -7,5 +7,14 @@ class Media {
         this._isCheckedOut = false; // to check whether the library is currently in possession of an item or not.
         this._ratings = [];
     }
+    get title() {
+        return this._title;
+    }
+    get isCheckedOut() {
+        return this._isCheckedOut;
+    }
+    get ratings() {
+        return this._ratings;
+    }
 
 }
