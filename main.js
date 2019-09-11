@@ -40,3 +40,7 @@ class Media {
         }
     }
 }
+
+class Book extends Media {
+
+}
