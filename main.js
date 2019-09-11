@@ -55,3 +55,16 @@ class Book extends Media {
         return this._pages;
     }
 }
+
+// an instance of Book class
+const historyOfEverything = new Book('A Short History of Nearly Everything', 'Bill Bryson', 544);
+
+// checking 'toggleCheckOutStatus()' is working
+historyOfEverything.toggleCheckOutStatus(); //
+//console.log(historyOfEverything.isCheckedOut);
+
+// adding some ratings in the _ratings array.
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+historyOfEverything.addRating(5);
+//console.log(historyOfEverything.getAverageRating());
