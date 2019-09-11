@@ -95,3 +95,24 @@ speed.addRating(5);
 
 //console.log(speed.getAverageRating());
 //console.log(speed.runtime);
+
+class CD extends Media {
+    constructor(title, artist) {
+        super(title);
+        this._artist = artist;
+        this._songs = [];
+    }
+    get artist() {
+        return this._artist;
+    }
+    get songs() {
+        return this._songs;
+    }
+    //method for adding song in the _songs array.
+    addSong(input) {
+        this.songs.push(input);
+    }
+
+
+
+}
