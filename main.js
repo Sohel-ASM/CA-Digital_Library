@@ -112,7 +112,19 @@ class CD extends Media {
     addSong(input) {
         this.songs.push(input);
     }
-
+    // shuffle method written below was devised by Fisher-Yates, and popularized by Don Knuth. Found it explained well in a site name 'Kirupa'.
+    shuffle(array) {
+        // create a for loop to shuffle array items in the array one by one
+        let len = array.length;
+        for (let i = len - 1; i >= 0; i--) { // for loop select an item from the array
+            let randomIndex = Math.floor(Math.random() * (i + 1));
+            let itemAtRandomIndex = array[randomIndex];
+            // now swap the item at randomIndex position with the item at the for loop's current i position
+            array[randomIndex] = array[i];
+            array[i] = itemAtRandomIndex;
+        }
+        return array;
+    }
 
 
 }
