@@ -126,5 +126,15 @@ class CD extends Media {
         return array;
     }
 
-
 }
+
+const firstCD = new CD('Greatest Hits', 'Yanni');
+firstCD.addSong('first');
+firstCD.addSong('second');
+firstCD.addSong('third');
+firstCD.addSong('fourth');
+firstCD.addSong('fifth');
+
+console.log(firstCD.title);
+//console.log('firstCD\'s song list: '+ firstCD.songs);
+//console.log('firstCD\'s song list shuffled: ' + firstCD.shuffle(firstCD.songs));
